@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Sentence Analyzer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <div class="nav-items">
+                <h1>AlishaMeiks</h1>
+            </div>
+        </div>
+        <div class="title">
+            <h1>Free Sentence Analyzer</h1>
+            <p>Use the best free sentence analyzer to check details about your paragraph or sentence</p>
+        </div>
+        <div class="flex-center analyzer-box">
+            <div class="flex-box-parent">
+                <div class="flex-box-child flex-bigger">
+                    <textarea placeholder="Enter your sentence here" name="" id="words" cols="30" rows="10"></textarea>
+                </div>
+                <div class="flex-box-child">
+                    <h1 class="analyzer-title">Analyzer</h1>
+                    <p id="longest-word"><b>Longest Word:  </b></p>
+                    <p id="shortest-word"><b>Shortest Word:  </b></p>
+                    <p id="most-repeated-word"><b>Most Repeated Word:  </b></p>
+                    <Button onclick="mostRepeated(document.getElementById('words').value)">Show</Button>
+                    <p id="word-count"><b>Word Count:  </b></p>
+                    <p id="letter-count"><b>Letter Count:  </b></p>
+                    <p id="sentence-count"><b>Sentence Count:  </b></p>
+                    <div class="bottom-right">
+                    <button onclick="saveData()">Save Analyzed Data</button>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </div>
+    <script src="scripts.js" id="the_script"></script>
+</body>
+</html>

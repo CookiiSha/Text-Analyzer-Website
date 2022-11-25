@@ -1,0 +1,109 @@
+@font-face {
+    font-family: Poppins;
+    src: url(fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: Title;
+    src: url(fonts/RomanticaPersonalUse-8V2J.ttf);
+}
+@font-face {
+    font-family: roboto;
+    src: url(fonts/Roboto-Regular.ttf);
+}
+.container{
+    font-family: Poppins;
+    margin-left: 30px;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.title h1{
+    font-size: 40px;
+    margin: 1px;
+}
+.title p {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.nav-bar{
+    margin:0px;
+}
+.flex-box-parent{
+    display: flex;
+    justify-content: center;
+    
+    width: 70%;
+    height: 500px;
+    box-shadow: 1px -1px 31px -7px rgba(164, 107, 255, 0.33);
+    -webkit-box-shadow: 1px -1px 31px -7px rgba(164, 107, 255, 0.33);
+    -moz-box-shadow: 1px -1px 31px -7px rgba(164, 107, 255, 0.33);
+    border-spacing: 1px solid black;
+    overflow: hidden;
+}
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-items h1{
+    font-family: Title;
+    font-size: 40;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    
+}
+.flex-box-child{
+    flex:1;
+    padding:10px;
+    
+    position: relative;
+}
+.flex-bigger{
+    flex-grow: 2;
+}
+#words{ 
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 0px;
+    outline: none;
+    resize: none;
+    border-right: 1px solid rgb(215, 215, 215);
+    font-size: 16px;
+    font-family: roboto;
+}
+.flex-box-child p{
+    color: rgb(144, 144, 144);
+    font-size: 15px;
+}
+.analyzer-title{
+    font-size: 30px;
+    color: rgb(254, 39, 150);
+    margin-top: 30px;
+}
+.bottom-right{
+    
+    position:absolute;
+    bottom:20px;
+    right:20px;
+}
+button{
+    border: 0px;
+    border-radius: 10px;
+    width: 150px;
+    height: 40px;
+    
+    background-color: rgb(137, 43, 226);
+    color: white;
+    font-family: roboto;
+    font-weight: 1000;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(111, 2, 213);
+}
